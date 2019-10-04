@@ -1,0 +1,1096 @@
+/*=============================
+== FONTS CONNECTION
+ ============================*/
+@font-face {
+   font-family: "Gentium Book Basic";
+   src: url(../fonts/GenBkBasB.woff) format("woff"),
+      url(../fonts/GenBkBasB.ttf) format("truetype");
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: Lato;
+   src: url(../fonts/latoregular.woff) format("woff"),
+      url(../fonts/latoregular.ttf) format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Open Sans";
+   src: url(../fonts/opensans.woff) format("woff"),
+      url(../fonts/opensans.ttf) format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Open Sans";
+   src: url(../fonts/opensansbold.woff) format("woff"),
+      url(../fonts/opensansbold.ttf) format("truetype");
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: "Open Sans Italic";
+   src: url(../fonts/opensansitalic.woff) format("woff"),
+      url(../fonts/opensansitalic.ttf) format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: "Yeseva One";
+   src: url(../fonts/yesevaone.woff) format("woff"),
+      url(../fonts/yesevaone.ttf) format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: Georgia;
+   src: url(../fonts/Georgia.woff) format("woff"),
+      url(../fonts/Georgia.ttf) format("truetype");
+   font-weight: 400;
+}
+
+
+/*=============================
+==CSS RESET
+=============================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+ol,
+ul {
+   list-style: none;
+}
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/*=============================
+== BASIC STYLES
+ ============================*/
+html {
+   box-sizing: border-box;
+   font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+   box-sizing: inherit;
+}
+
+a {
+   text-decoration: none;
+   display: flex;
+   /* убираем подчеркивание */
+}
+
+li {
+   list-style-type: none;
+   /* убираем маркеры */
+}
+
+
+
+
+
+/*=============================
+== HEADER
+ ============================*/
+
+.page-header {
+   width: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+   min-height: 110px;
+   padding: 9px 0;
+   display: flex;
+   position: absolute;
+   /* left: 0; */
+   top: 0;
+   background-position: right center;
+   /* Выравниваем бекграунд */
+   background: linear-gradient(360deg, #0000 0%, #0005 100%);
+   /* Задаем градус и цвета */
+   left: 50%;
+   /* Выравниваем поцентру шаг 1 */
+   transform: translate(-50%, 0);
+   /* Выравниваем поцентру шаг 2 */
+   z-index: 1;
+}
+
+.wrapper-header {
+   width: calc(100% - 22.5%);
+   height: 100%;
+   margin: 0 auto;
+}
+
+.logo {
+   margin-right: auto;
+}
+
+.wrapper-header,
+.navigation,
+.socials,
+nav {
+   display: flex;
+   align-items: center;
+}
+
+nav {
+   width: 66.59177127598951%;
+   /* flex-wrap: wrap; */
+}
+
+.touch-btn {
+   display: none;
+}
+
+.navigation {
+   display: flex;
+   flex-wrap: wrap;
+   margin-right: 10px;
+}
+
+.navigation li:not(:last-of-type) {
+   margin-right: 52px;
+}
+
+.navigation a {
+   font-family: "Gentium Book Basic";
+   font-weight: 900;
+   font-size: 1.3125rem;
+   color: #fff;
+}
+
+.socials {
+   margin-right: 2.2%;
+}
+
+.socials li {
+   margin: 0 3%;
+}
+
+.socials a {
+   display: block;
+   width: 22PX;
+   height: 22px;
+   background: url(../images/social.png);
+   background-repeat: no-repeat;
+}
+
+a.tw {
+   background-position: 4px 2px;
+   background-size: 282%;
+}
+
+a.youTube {
+   background-position: -25px 2px;
+   background-size: 282%;
+}
+
+a.fb {
+   background-position: -48px 2px;
+   background-size: 282%;
+}
+
+/*=============================
+== DEVIZ
+ ============================*/
+.deviz {
+   width: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+   background: url(../images/bg-1.png);
+   padding-top: 15em;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 12em;
+}
+
+h1 {
+   font-family: "Yeseva One";
+   font-size: 5.625rem;
+   color: #fff;
+   text-align: center;
+   margin-bottom: 33px;
+}
+
+.deviz img {
+   margin-bottom: 33px;
+}
+
+.buttons {
+   min-width: 30.5em;
+   display: flex;
+   justify-content: space-between;
+}
+
+.black,
+.white {
+   width: 12.6em;
+   height: 3em;
+   box-sizing: border-box;
+   /* margin: 0 auto; */
+   font-family: Lato;
+   font-weight: 400;
+   font-size: 1.125em;
+   color: #fff;
+   text-align: center;
+   text-transform: uppercase;
+   text-decoration: none;
+}
+
+.black {
+   border: 1px solid #0008;
+   background: #0006;
+}
+
+.white {
+   border: 1px solid #fff8;
+   background: #fff5;
+}
+
+/*=============================
+== content-1
+ ============================*/
+
+.content-1 {
+   width: 100%;
+   max-width: 1600px;
+   margin: 0 auto;
+   min-height: 710px;
+   /* overflow: hidden; */
+   background: url(../images/background-white-1.png);
+   padding-top: 3em;
+}
+
+.right-foods {
+   width: 70%;
+   max-width: 68.125em;
+   margin: 0 auto;
+   min-height: 654px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.right-food {
+   max-width: 50%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 40px;
+   margin-right: 23px;
+}
+
+h2 {
+   font-family: "Yeseva One";
+   font-size: 2.25rem;
+   color: #cc9900;
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.right-food p {
+   font-family: Lato;
+   color: #000;
+   line-height: 1.5;
+   text-align: center;
+   margin-bottom: 52px;
+}
+
+.cook {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+   margin-right: 110px;
+}
+
+.right-food img {
+   width: 55%;
+   margin-bottom: 33px;
+   /* height: 100%; */
+}
+
+.dish {
+   width: 621px;
+   height: 625px;
+}
+
+
+/*=============================
+== content-2
+ ============================*/
+
+.content-2 {
+   width: 100%;
+   max-width: 1600px;
+   min-height: 760px;
+   margin: 0 auto;
+   background: url(../images/bg-2.png);
+   padding-right: 216px;
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+}
+
+.fine-ingredients {
+   max-width: 35.625em;
+   min-height: 36em;
+   padding: 4.5em;
+   background: #0008;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.fine-ingredients h2 {
+   color: #fff;
+   margin-bottom: 15px;
+
+}
+
+.fine-ingredients-divider {
+   width: 250px;
+   margin-bottom: 30px;
+}
+
+.fine-ingredients p {
+   font-family: Lato;
+   color: #fff;
+   line-height: 1.5;
+   text-align: center;
+   margin-bottom: 70px;
+}
+
+.img-ingredients {
+   min-width: 392px;
+   min-height: 110px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.img-ingred {
+   width: 110px;
+   height: 110px;
+}
+
+/*=============================
+== content-3
+ ============================*/
+
+.content-3 {
+   width: 100%;
+   max-width: 1600px;
+   min-height: 994px;
+   margin: 0 auto;
+   background: url(../images/background-white-2.png);
+   display: flex;
+   justify-content: center;
+}
+
+h3 {
+   font-family: "Yeseva One";
+   font-size: 2.25rem;
+   color: #cc9900;
+   text-align: center;
+   margin-bottom: 15px;
+}
+
+.menu {
+   width: 100%;
+   width: 65.6%;
+   min-height: 994px;
+   padding-top: 100px;
+   flex-wrap: wrap;
+}
+
+.menu-0 {
+   min-width: 43.52380952380952%;
+}
+
+.menu-1 {
+   width: 100%;
+   margin-bottom: 59px;
+}
+
+.menu-2 {
+   width: 28.5em;
+   margin-bottom: 18px;
+   min-height: 80px;
+   padding: 11px 11px 11px 11px;
+   box-sizing: border-box;
+   position: relative;
+}
+
+.menu-2:last-child {
+   margin-bottom: 0;
+}
+
+.specials {
+   border: 1px solid #d4b661;
+}
+
+.special {
+   width: 59px;
+   height: 22px;
+   background: #d5b96b;
+   position: absolute;
+   bottom: 100%;
+   right: -1px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: Lato;
+   font-size: 0.875rem;
+   color: #fff;
+}
+
+.menu-3 {
+   width: 100%;
+   height: 29px;
+   border-bottom: 1px solid #e1d6ae;
+   margin-bottom: 11px;
+}
+
+.menu,
+.menu-3 {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   box-sizing: border-box;
+}
+
+.menu-0,
+.menu-1 {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   box-sizing: border-box;
+}
+
+.menu-1 img {
+   margin-bottom: 19px;
+}
+
+.menu-4 {
+   font-family: "Yeseva One";
+   font-size: 1.3125rem;
+   color: #cc9900;
+   text-align: center;
+}
+
+.menu-2 p {
+   font-family: Lato;
+   font-size: 1rem;
+   color: #4c4c4c;
+   text-align: left;
+}
+
+/*=============================
+== content-4
+ ============================*/
+
+.content-4 {
+   width: 100%;
+   max-width: 1600px;
+   min-height: 760px;
+   margin: 0 auto;
+   background: url(../images/bg-3.png);
+   background-position: bottom left;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.rewiews {
+   width: 44.8%;
+   min-height: 557px;
+   background: rgba(0, 0, 0, 0.7);
+   padding-top: 82px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   box-sizing: border-box;
+}
+
+.rewiews h2 {
+   color: #fff;
+}
+
+.rewiews img {
+   margin-bottom: 18px;
+}
+
+.rewiews p {
+   width: 79%;
+   font-family: "Gentium Book Basic";
+   font-weight: 900;
+   font-size: 1.4rem;
+   color: #fff;
+   text-align: center;
+   line-height: 1.8;
+   padding: 0;
+   margin-bottom: 42px;
+}
+
+.rewiews p::before {
+   content: "“";
+   float: left;
+   font-family: Georgia;
+   color: #a0a09c;
+   font-size: 6rem;
+   margin-top: -59px;
+   margin-left: -46px;
+}
+
+.copyright {
+   font-family: Lato;
+   font-size: 1.125rem;
+   color: #fff;
+}
+
+/*=============================
+== content-5
+ ============================*/
+
+.content-5 {
+   width: 100%;
+   max-width: 1600px;
+   min-height: 710px;
+   margin: 0 auto;
+   background: url(../images/background-white-3.png);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.content-5-wrapper {
+   width: 79.125%;
+   min-height: 71.40845070422535%;
+   display: flex;
+   justify-content: center;
+}
+
+.dish-img {
+   width: 572px;
+   height: 507px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.dish-img img:first-child {
+   margin-right: 30px;
+}
+
+
+.book-a-table {
+   min-width: 54.63%;
+   padding: 0 9.09%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.book-a-table h2 {
+   margin-bottom: 15px;
+}
+
+.book-a-table img {
+   margin-bottom: 33px;
+}
+
+.book-a-table p {
+   font-family: Lato;
+   font-size: 1rem;
+   color: #4c4c4c;
+   line-height: 1.5;
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.inputs-pole {
+   min-width: 67.82%;
+   min-height: 152px;
+   padding: 0;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.input p {
+   width: 100%;
+   font-family: "Open Sans";
+   font-weight: 900;
+   font-size: 0.875rem;
+   color: #c9a131;
+   text-align: start;
+   margin-bottom: 5px;
+
+}
+
+.input {
+   height: 62px;
+   margin-bottom: 28px;
+}
+
+.date {
+   background: url(../images/icon-calendar.png), linear-gradient(rgba(256, 256, 256, 1), rgba(256, 256, 256, 1));
+   background-repeat: no-repeat;
+   background-position: 95%;
+}
+
+.party-number {
+   background: url(../images/icon-2.png), linear-gradient(rgba(256, 256, 256, 1), rgba(256, 256, 256, 1));
+   background-repeat: no-repeat;
+   background-position: 95%;
+}
+
+input {
+   width: 200px;
+   height: 36px;
+   box-sizing: border-box;
+   border: 1px solid #c8c6c6;
+   padding-left: 15px;
+   font-family: "Open Sans Italic";
+   font-weight: 400;
+   font-size: 1rem;
+   color: #c8c6c6;
+   outline: none;
+}
+
+input:focus,
+input:active {
+   border-color: #c9a131;
+}
+
+.btn {
+   width: 200px;
+   height: 36px;
+   box-sizing: border-box;
+   border: 1px solid #c9a131;
+   background: #c9a131;
+   margin: 0 auto;
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-size: 1rem;
+   color: #fff;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+}
+
+/*=============================
+== FOOTER
+ ============================*/
+
+footer {
+   width: 100%;
+   max-width: 1600px;
+   min-height: 320px;
+   margin: 0 auto;
+   background: #191919;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-wrapper {
+   max-width: 71.25%;
+   min-height: 59.375%;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+.footer-col {
+   max-width: 30.52631578947368%;
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer-col img {
+   margin-bottom: 20px;
+}
+
+h4 {
+   font-family: "Yeseva One";
+   font-size: 1.3125rem;
+   color: #fff;
+   margin-bottom: 20px;
+}
+
+.footer-col p {
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-size: 1rem;
+   color: #c8c6c6;
+   text-align: center;
+   line-height: 1.5;
+}
+
+.bold {
+   font-weight: 900;
+}
+
+.cards-block {
+   width: 120px;
+   height: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 50px;
+}
+
+.cards-block li {
+   width: 22px;
+   height: 15px;
+   margin-right: 10px;
+}
+
+
+.cards-block a {
+   width: 22px;
+   height: 15px;
+   box-sizing: border-box;
+   background: url(../images/cards.png);
+}
+
+a.aexpr {
+   background-position: 0px 0px;
+   background-size: 550%;
+}
+
+a.pp {
+   background-position: -33px 0px;
+   background-size: 550%;
+}
+
+a.visa {
+   background-position: -66px 0px;
+   background-size: 550%;
+}
+
+a.mc {
+   background-position: -99px 0px;
+   background-size: 550%;
+}
+
+.social-2 {
+   width: 94px;
+   height: 15px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin-top: 48px;
+}
+
+.social-2 li {
+   width: 15px;
+   height: 15px;
+   margin-right: 10px;
+}
+
+
+.social-2 a {
+   width: 15px;
+   height: 15px;
+   box-sizing: border-box;
+   background: url(../images/social-2.png);
+   background-repeat: no-repeat;
+}
+
+a.fb-2 {
+   background-position: 0px 0px;
+   background-size: 573%;
+}
+
+a.youTube-2 {
+   background-position: -21px 0px;
+   background-size: 573%;
+}
+
+a.tw-2 {
+   background-position: -46px 0px;
+   background-size: 573%;
+}
+
+a.hpv {
+   background-position: -72px 0px;
+   background-size: 573%;
+}
+
+/*=============================
+== MEDIA
+ ============================*/
+
+/* @media (max-width: 1130px) {
+   .menu {
+      width: 100%;
+   }
+} */
+
+@media (max-width: 992px) {
+   body {
+      padding: 0 15px;
+   }
+
+   h1 {
+      font-size: 3.625rem;
+   }
+
+   .right-foods {
+      width: 95%;
+   }
+
+   .dish {
+      width: 310.5px;
+      height: 312.5px;
+   }
+
+   .content-5-wrapper {
+      width: 95%;
+      height: auto;
+   }
+
+   .dish-img {
+      display: none;
+   }
+
+   .footer-col:first-of-type {
+      display: none;
+   }
+
+   .content-2 {
+      justify-content: center;
+      padding-right: 0;
+   }
+
+   .rewiews {
+      width: 100%;
+   }
+}
+
+@media (max-width: 576px) {
+   h1 {
+      font-size: 2rem;
+   }
+
+   .dish {
+      display: none;
+   }
+
+   .right-food {
+      max-width: 100em;
+   }
+
+   .fine-ingredients {
+      width: 33em;
+      padding: 0;
+   }
+
+   /* .img-ingredients {
+      display: none;
+   } */
+
+   .menu {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+
+   .navigation {
+      display: none;
+   }
+
+   .touch-btn {
+      display: block;
+   }
+
+   #touch:checked~ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+
+   .buttons {
+      min-width: 14em;
+      flex-direction: column;
+      align-items: center;
+   }
+}
+
+==================================================================.search {
+   position: relative;
+}
+
+.search-input {
+   width: 240px;
+   height: 30px;
+   border-radius: 5px;
+   border: 1px solid #e5e5e5;
+   padding-left: 32px;
+   box-sizing: border-box;
+   outline: none;
+}
+
+.search-label {
+   display: block;
+   width: 20px;
+   height: 20px;
+   background: url(../images/icon-calendar.png);
+   background-repeat: no-repeat;
+   position: absolute;
+   left: 10px;
+   top: 7px;
+   z-index: 2;
+}
+
+.search-input:hover {
+   box-shadow: 0 0 5px #678;
+   cursor: pointer;
+}
+
+.search-input:focus {
+   outline: none;
+   border-color: #4444ff;
+}
+
+.banner {
+   height: 200px;
+   overflow: hidden;
+}
+
+.content-col {
+   box-shadow: 0 0 5px 2px #ccc;
+}

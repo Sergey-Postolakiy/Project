@@ -1,0 +1,1069 @@
+                    /*=============================
+== FONTS CONNECTION
+ ============================*/
+
+                    @font-face {
+                        font-family: Roboto;
+                        src: url(../fonts/roboto/Roboto.woff) format("woff"), url(../fonts/roboto/Roboto.ttf) format("truetype");
+                        font-weight: 400;
+                    }
+
+                    @font-face {
+                        font-family: Roboto;
+                        src: url(../fonts/roboto/Robotolight.woff) format("woff"), url(../fonts/roboto/Robotolight.ttf) format("truetype");
+                        font-weight: 300;
+                    }
+
+                    @font-face {
+                        font-family: Roboto;
+                        src: url(../fonts/roboto/Robotoblack.woff) format("woff"), url(../fonts/roboto/Robotoblack.ttf) format("truetype");
+                        font-weight: 900;
+                    }
+
+                    @font-face {
+                        font-family: Playfair-Display;
+                        src: url(../fonts/playfair/playfairdisplayblack.woff) format("woff"), url(../fonts/playfair/playfairdisplayblack.ttf) format("truetype");
+                        font-weight: 900;
+                    }
+
+                    @font-face {
+                        font-family: Playfair-Display;
+                        src: url(../fonts/playfair/playfairdisplay.woff) format("woff"), url(../fonts/playfair/playfairdisplay.ttf) format("truetype");
+                        font-weight: 400;
+                    }
+
+                    @font-face {
+                        font-family: HammersmithOn;
+                        src: url(../fonts/hammersmithone/hammersmithone.woff) format("woff"), url(../fonts/hammersmithone/hammersmithone.ttf) format("truetype");
+                        font-weight: 400;
+                    }
+
+                    /*=============================
+== CSS RESET
+ ============================*/
+
+                    html,
+                    body,
+                    div,
+                    span,
+                    applet,
+                    object,
+                    iframe,
+                    h1,
+                    h2,
+                    h3,
+                    h4,
+                    h5,
+                    h6,
+                    p,
+                    blockquote,
+                    pre,
+                    a,
+                    abbr,
+                    acronym,
+                    address,
+                    big,
+                    cite,
+                    code,
+                    del,
+                    dfn,
+                    em,
+                    img,
+                    ins,
+                    kbd,
+                    q,
+                    s,
+                    samp,
+                    small,
+                    strike,
+                    strong,
+                    sub,
+                    sup,
+                    tt,
+                    var,
+                    b,
+                    u,
+                    i,
+                    center,
+                    dl,
+                    dt,
+                    dd,
+                    ol,
+                    ul,
+                    li,
+                    fieldset,
+                    form,
+                    label,
+                    legend,
+                    table,
+                    caption,
+                    tbody,
+                    tfoot,
+                    thead,
+                    tr,
+                    th,
+                    td,
+                    article,
+                    aside,
+                    canvas,
+                    details,
+                    embed,
+                    figure,
+                    figcaption,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    output,
+                    ruby,
+                    section,
+                    summary,
+                    time,
+                    mark,
+                    audio,
+                    video {
+                        margin: 0;
+                        padding: 0;
+                        border: 0;
+                        font-size: 100%;
+                        font: inherit;
+                        vertical-align: baseline;
+                    }
+
+                    /* HTML5 display-role reset for older browsers */
+
+                    article,
+                    aside,
+                    details,
+                    figcaption,
+                    figure,
+                    footer,
+                    header,
+                    hgroup,
+                    menu,
+                    nav,
+                    section {
+                        display: block;
+                    }
+
+                    body {
+                        line-height: 1;
+                    }
+
+                    ol,
+                    ul {
+                        list-style: none;
+                    }
+
+                    blockquote,
+                    q {
+                        quotes: none;
+                    }
+
+                    blockquote:before,
+                    blockquote:after,
+                    q:before,
+                    q:after {
+                        content: '';
+                        content: none;
+                    }
+
+                    table {
+                        border-collapse: collapse;
+                        border-spacing: 0;
+                    }
+
+                    /*=============================
+== BASIC STYLES
+ ============================*/
+
+                    body {
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+
+                    .wrapper {
+                        width: 980px;
+                        margin: 0 auto;
+                    }
+
+                    .clear::after {
+                        content: "";
+                        display: block;
+                        clear: both;
+                    }
+
+                    /*=============================
+== HEADER
+ ============================*/
+
+                    .page-header {
+                        /* background: #170d40; */
+                        height: 80px;
+                        width: 1600px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: 1;
+                    }
+
+                    .page-header .wrapper {
+                        height: 100%;
+                    }
+
+                    .header-logo {
+                        float: left;
+                        margin-top: 15px;
+                    }
+
+                    .main-nav {
+                        float: right;
+                        margin-top: 33px;
+                    }
+
+                    .main-nav li {
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+
+                    .main-nav a {
+                        color: #fff;
+                        font-family: Roboto;
+                        font-weight: 900;
+                        font-size: 13px;
+                        text-decoration: none;
+                    }
+
+                    .main-nav a:hover {
+                        color: #00E0D0;
+                    }
+
+                    /*=============================
+== MAIN
+ ============================*/
+
+                    main {
+                        width: 1600px;
+                    }
+
+                    h2 {
+                        font-family: Playfair-Display;
+                        color: #413D4B;
+                        font-weight: 900;
+                        font-size: 22px;
+                        text-transform: uppercase;
+                    }
+
+                    /*=============================
+== BANNER
+ ============================*/
+
+                    .banner {
+                        height: 670px;
+                        background: linear-gradient(rgba(32, 19, 75, 0.85), rgba(32, 19, 75, 0.85)), url(../images/header-bg.png);
+                        padding-top: 230px;
+                        box-sizing: border-box;
+                    }
+
+                    .banner-slider {
+                        height: 100%;
+                        margin: 0 auto;
+                    }
+
+                    .banner-slider-content {
+                        height: 284px;
+                        margin: 0 auto;
+                    }
+
+                    h1 {
+                        font-family: Playfair-Display;
+                        color: #fff;
+                        font-weight: 900;
+                        font-size: 32px;
+                        /* margin-left: 239px; */
+                        margin-bottom: 53px;
+                        text-align: center;
+                    }
+
+                    p {
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        text-align: center;
+                        color: #716e78;
+                        line-height: 1.5;
+                    }
+
+                    .banner-slider-content p {
+                        margin: 0 auto;
+                        color: #fff;
+                    }
+
+                    h1::after {
+                        content: '';
+                        display: block;
+                        width: 50px;
+                        height: 1px;
+                        background: #00E0D0;
+                        margin-top: 27px;
+                        margin-left: 465px;
+                    }
+
+                    .learn-more-btn {
+                        display: block;
+                        width: 120px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #00E0D0;
+                        border-radius: 3px;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: HammersmithOn;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00E0D0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding-top: 12px;
+                        margin-top: 53px;
+                    }
+
+                    .banner-slider-controls {
+                        width: 51px;
+                        height: 14px;
+                        margin: 82px auto;
+                    }
+
+                    .filled-circle {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #00E0D0;
+                        background: #00E0D0;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                    }
+
+                    .empty-circle {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        border: 1px solid #fff;
+                        box-sizing: border-box;
+                        border-radius: 50%;
+                    }
+
+                    .banner-slider-controls span:hover,
+                    :active {
+                        border: 1px solid #00E0D0;
+                    }
+
+                    /*=============================
+== WHITE SECTION OUR STORY
+ ============================*/
+
+                    .ourStory {
+                        width: 100%;
+                        height: 402px;
+                        box-sizing: border-box;
+                    }
+
+                    .logo-2 {
+                        float: left;
+                        margin-top: 70px;
+                        margin-right: 100px;
+                    }
+
+                    .our-story {
+                        width: 538px;
+                        float: left;
+                        margin-left: 94px;
+                    }
+
+                    .our-story h2 {
+                        margin-top: 70px;
+                        margin-bottom: 28px;
+                    }
+
+                    .our-story p {
+                        text-align: left;
+                        line-height: 1.5;
+                        margin-bottom: 30px;
+                    }
+
+                    .our-story a {
+                        margin-left: 0;
+                        margin-top: 0;
+                    }
+
+                    /*=============================
+== VIDEO
+ ============================*/
+
+                    .video {
+                        width: 100%;
+                        height: 550px;
+                        background: linear-gradient(rgba(32, 19, 75, 0.85), rgba(32, 19, 75, 0.85)), url(../images/blue-section-2.png);
+                        padding-top: 202px;
+                        box-sizing: border-box;
+                    }
+
+                    .playOurStory {
+                        width: 100px;
+                        height: 100px;
+                        margin: 0 auto;
+                    }
+
+                    .video h2 {
+                        display: block;
+                        height: 16px;
+                        font-family: Roboto;
+                        font-weight: 900;
+                        color: #fff;
+                        font-size: 16px;
+                        margin-top: 34px;
+                        margin-left: 418px;
+                    }
+
+                    /*=============================
+== EXPERTISE
+ ============================*/
+
+                    .white-section-expertise {
+                        height: 754px;
+                    }
+
+                    .expertise-info {
+                        height: 500px;
+                    }
+
+
+
+
+                    .expertise h2 {
+                        margin-top: 70px;
+                        text-align: center;
+                        margin-bottom: 16px;
+                    }
+
+                    .expertise p {
+                        font-family: Playfair-Display;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #636268;
+                        text-align: center;
+                    }
+
+                    .expertise p::after {
+                        content: '';
+                        display: block;
+                        width: 50px;
+                        height: 1px;
+                        background: #C6C4C9;
+                        margin-top: 16px;
+                        margin-left: 462px;
+                        margin-bottom: 50px;
+                    }
+
+                    .block {
+                        float: left;
+                        width: 320px;
+                        height: 500px;
+                    }
+
+                    .border {
+                        border-right: 1px solid #ebebeb;
+                        border-left: 1px solid #ebebeb;
+                    }
+
+                    .block-1 {
+                        width: 320px;
+                        height: 250px;
+                        padding-left: 33px;
+                        padding-right: 33px;
+                        box-sizing: border-box;
+                    }
+
+                    .block-1 img {
+                        margin-left: 102px;
+                        margin-bottom: 35px;
+                    }
+
+                    .block-1 h4 {
+                        font-family: Roboto;
+                        font-weight: 900;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        color: #413d4b;
+                        margin-bottom: 25px;
+                    }
+
+                    /*=============================
+== THIRD
+ ============================*/
+
+                    .third {
+                        height: 712px;
+                        background: linear-gradient(rgba(32, 19, 75, 0.85), rgba(32, 19, 75, 0.85)), url(../images/blue-section-3.png);
+                        padding-top: 70px;
+                        box-sizing: border-box;
+                    }
+
+                    .amazingTeam h2 {
+                        text-align: center;
+                        margin-bottom: 16px;
+                        color: #fff;
+                    }
+
+                    .amazingTeam p {
+                        font-family: Playfair-Display;
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #fff;
+                        text-align: center;
+                    }
+
+                    .amazingTeam p::after {
+                        content: '';
+                        display: block;
+                        width: 50px;
+                        height: 1px;
+                        background: #655c80;
+                        margin-top: 16px;
+                        margin-left: 462px;
+                        margin-bottom: 50px;
+                    }
+
+                    .specialists {
+                        width: 100%;
+                    }
+
+                    .specialist {
+                        display: inline-block;
+                        width: 221px;
+                        height: 308px;
+                        margin-left: 10px;
+                        margin-right: 10px;
+                        border: 1px solid #7a788e;
+                        box-sizing: border-box;
+                    }
+
+                    .name {
+                        font-family: Roboto;
+                        font-weight: 900;
+                        color: #fff;
+                        text-transform: uppercase;
+                        margin-top: 20px;
+                        margin-bottom: 12px;
+                    }
+
+                    .specialty {
+                        font-size: 13px;
+                    }
+
+                    .we-are-hiring {
+                        width: 100%;
+                        height: 80px;
+                        margin-top: 70px;
+                    }
+
+                    .we-are-hiring p {
+                        color: #fff;
+                    }
+
+                    .we-are-hiring-btn {
+                        display: block;
+                        width: 140px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #00E0D0;
+                        border-radius: 3px;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: HammersmithOn;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00E0D0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding-top: 12px;
+                        margin-top: 25px;
+                    }
+
+                    /*=============================
+== OUR WORKS
+ ============================*/
+
+                    .our-works {
+                        height: 157px;
+                    }
+
+                    .ourWorks h2 {
+                        display: block;
+                        float: left;
+                        margin-top: 70px;
+                    }
+
+                    .ourWorks p {
+                        display: block;
+                        float: right;
+                        margin-top: 70px;
+                    }
+
+                    .ourWorks a {
+                        text-decoration: none;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        color: #716e78;
+                    }
+
+                    .ourWorks a::after {
+                        content: ' >'
+                    }
+
+                    /*=============================
+== GRAY SECTION
+ ============================*/
+
+                    .gray-section {
+                        width: 100%;
+                        height: 400px;
+                        box-sizing: border-box;
+                    }
+
+                    .love {
+                        width: 267px;
+                        height: 200px;
+                        display: inline-block;
+                        margin-left: -4px;
+                        margin-bottom: -4px;
+                    }
+
+                    .gray-1 {
+                        background: #B6B6B6;
+                    }
+
+                    .gray-2 {
+                        background: #ACACAC;
+                    }
+
+                    .gray-3 {
+                        background: #A1A1A1;
+                    }
+
+                    .gray-4 {
+                        background: #A4A4A4;
+                    }
+
+                    .gray-5 {
+                        background: #8A8A8A;
+                    }
+
+                    /*=============================
+== LOAD MORE
+ ============================*/
+
+                    .load-more {
+                        height: 180px;
+                        padding: 70px;
+                        box-sizing: border-box;
+                    }
+
+                    .load-more-btn {
+                        display: block;
+                        width: 120px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #00E0D0;
+                        border-radius: 3px;
+                        margin: 0 auto;
+                        text-align: center;
+                        font-family: HammersmithOn;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00E0D0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding-top: 12px;
+                    }
+
+                    /*=============================
+== FOURTH
+ ============================*/
+
+                    .fourth {
+                        width: 100%;
+                        height: 500px;
+                        background: linear-gradient(rgba(32, 19, 75, 0.85), rgba(32, 19, 75, 0.85)), url(../images/blue-section-4.png);
+                        padding-top: 70px;
+                        box-sizing: border-box;
+                    }
+
+                    .specialist-info {
+                        width: 100%;
+                        height: 318px;
+                    }
+
+                    .quotation-mark {
+                        height: 26px;
+                        margin-bottom: 44px;
+                    }
+
+                    .specialist-info-1 {
+                        height: 100px;
+                        font-family: Playfair-Display;
+                        width: 400;
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: normal;
+                        margin-bottom: 35px;
+                    }
+
+                    .specialty-info {
+                        color: #fff;
+                        font-size: 13px;
+                    }
+
+                    .specialist-photo {
+                        width: 398px;
+                        height: 71px;
+                        margin: 0 auto;
+                    }
+
+                    /* .photo-nav-back a {
+                    margin-bottom: 25px;
+                    color: #9f9f9f;
+                    text-decoration: none;
+                    font-size: 25px;
+                } */
+
+                    .specialist-photo li {
+                        display: inline-block;
+                        margin-right: 6px;
+                        margin-left: 6px;
+                        vertical-align: middle;
+                    }
+
+                    .photo-non-active {
+                        vertical-align: middle;
+                    }
+
+                    /*=============================
+== CLIENTS
+ ============================*/
+
+                    .clients {
+                        width: 100%;
+                        height: 656px;
+                        position: relative;
+                    }
+
+                    .contact-us {
+                        display: inline-block;
+                        box-sizing: border-box;
+                        padding-top: 70px;
+                        margin-right: 100px;
+                    }
+
+                    form p {
+                        width: 460px;
+                        margin-top: 24px;
+                    }
+
+                    input {
+                        width: 460px;
+                        height: 45px;
+                        box-sizing: border-box;
+                        padding: 15px;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: #716e78;
+                    }
+
+                    textarea {
+                        width: 460px;
+                        height: 200px;
+                        box-sizing: border-box;
+                        padding: 15px;
+                        font-family: Roboto;
+                        font-size: 14px;
+                        font-weight: 300;
+                        color: #716e78;
+                    }
+
+                    .submit {
+                        display: block;
+                        width: 120px;
+                        height: 40px;
+                        box-sizing: border-box;
+                        border: 1px solid #00E0D0;
+                        border-radius: 3px;
+                        text-align: center;
+                        font-family: HammersmithOn;
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #00E0D0;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        padding-top: 12px;
+                        background-color: transparent;
+                    }
+
+                    .clients-logo {
+                        display: inline-block;
+                        width: 382px;
+                        height: 100%;
+                    }
+
+                    .happy-clients {
+                        position: absolute;
+                        top: 70px;
+                    }
+
+                    .clients-logo-1 {
+                        height: 422px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 114px;
+                    }
+
+                    .clients-logo-2 {
+                        height: 422px;
+                        display: inline-block;
+                        position: absolute;
+                        top: 114px;
+                        left: 1132px;
+                    }
+
+                    .clients-logo-1 li,
+                    .clients-logo-2 li {
+                        margin-top: 15px;
+                        margin-bottom: 50px;
+                        text-align: center;
+                    }
+
+                    /*=============================
+== FOOTER
+ ============================*/
+
+                    .page-footer {
+                        width: 1600px;
+                        height: 400px;
+                        background: linear-gradient(rgba(32, 19, 75, 0.85), rgba(32, 19, 75, 0.85)), url(../images/footer-bg.png);
+                        position: relative;
+                        padding-top: 70px;
+                    }
+
+                    .page-footer::after {
+                        display: block;
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background: rgba(32, 19, 75, 0.85);
+                        z-index: 1;
+                    }
+
+                    .footer-lower,
+                    .footer-upper {
+                        position: relative;
+                        z-index: 2;
+
+                    }
+
+                    .footer-upper-col {
+                        display: inline-block;
+                        width: 292px;
+                        height: 180px;
+                        margin-right: 35px;
+                    }
+
+                    .footer-logo {
+                        width: 128px;
+                        height: 50px;
+                        margin-bottom: 31px;
+                    }
+
+                    .footer-upper-col h4 {
+                        font-family: Roboto;
+                        font-weight: 900;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        text-align: left;
+                        color: #fff;
+                        position: absolute;
+                        top: 20px;
+                    }
+
+                    .footer-text,
+                    .footer-col-text {
+                        text-align: left;
+                        line-height: 2;
+                        color: #fff;
+                    }
+
+                    address img {
+                        position: absolute;
+                        top: 82px;
+                    }
+
+                    address p {
+                        position: absolute;
+                        top: 82px;
+                        right: 379px;
+                    }
+
+                    .footer-tel img {
+                        position: absolute;
+                        top: 183px;
+                    }
+
+                    .footer-tel a {
+                        text-decoration: none;
+                        color: #fff;
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+
+                    .footer-col-text {
+                        width: 239px;
+                    }
+
+                    .footer-col-text-tel {
+                        position: absolute;
+                        top: 183px;
+                        right: 497px;
+                    }
+
+                    .footer-upper-col-3 {
+                        display: inline-block;
+                        width: 292px;
+                        height: 180px;
+                        font-family: Roboto;
+                        font-weight: 900;
+                        font-size: 15px;
+                        text-transform: uppercase;
+                        text-align: left;
+                        color: #fff;
+                        position: absolute;
+                        top: 20px;
+                        right: 38px;
+                    }
+
+                    .subscribe {
+                        width: 212px;
+                        position: absolute;
+                        top: 70px;
+                        right: 80px;
+                    }
+
+                    #subscribe-font-background {
+                        width: 212px;
+                        background-color: transparent;
+                        border: 1px solid #a09ab3;
+                        font-family: Roboto;
+                        font-weight: 300;
+                        font-size: 14px;
+                    }
+
+                    #subscribe-font-background::-webkit-input-placeholder {
+                        color: #d9d8de;
+                    }
+
+                    .subscribe-btn {
+                        /* display: block; */
+                        width: 70px;
+                        height: 45px;
+                        box-sizing: border-box;
+                        border: none;
+                        background: url(../images/subscribe-btn.png), linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        position: absolute;
+                        top: 0px;
+                        right: -79px;
+                    }
+
+                    .socials {
+                        width: 254px;
+                        position: absolute;
+                        top: 142px;
+                        right: 38px;
+                    }
+
+                    .socials li {
+                        display: inline-block;
+                        margin-right: 4px;
+                    }
+
+                    .socials a {
+                        display: block;
+                        width: 35PX;
+                        height: 35px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        box-sizing: border-box;
+                        background: url(../images/sicials.png);
+                    }
+
+                    a.fb {
+                        background-position: -25px 2px;
+                        background-size: 282%;
+                    }
+
+                    a.tw {
+                        background-position: 35px 55px;
+                        background-size: 290%;
+                    }
+
+                    a.dri {
+                        background-position: 89px 77px;
+                        background-size: 265%;
+                    }
+
+                    a.ins {
+                        background-position: 127px 76px;
+                        background-size: 260%;
+                    }
+
+                    a.ggl {
+                        background-position: 232px 49px;
+                        background-size: 260%;
+                    }
+
+                    a.yut {
+                        background-position: 292px 28px;
+                        background-size: 263%;
+                    }
+
+                    .footer-lower {
+                        height: 15px;
+                        margin-top: 80px;
+                    }
+
+                    .help,
+                    .copyright {
+                        display: inline-block;
+                        font-family: Roboto;
+                        font-weight: 400;
+                        font-size: 14px;
+                        text-align: left;
+                        color: #fff;
+                    }
+
+                    .help li {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        margin-right: 27px;
+                    }
+
+                    .copyright {
+                        margin-left: 423px;
+                    }

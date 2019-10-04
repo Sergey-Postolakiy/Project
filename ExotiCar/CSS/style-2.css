@@ -1,0 +1,449 @@
+/*=============================
+== FONTS CONNECTION
+ ============================*/
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../fonts/HelveticaNeue-Medium.woff) format("woff"),
+        url(../fonts/HelveticaNeue-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../fonts/HelveticaNeue.woff) format("woff"),
+        url(../fonts/HelveticaNeue.ttf) format("truetype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../fonts/HelveticaNeue-Bold.woff) format("woff"),
+        url(../fonts/HelveticaNeue-Bold.ttf) format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Helvetica Neue Italic";
+    src: url(../fonts/HelveticaNeueLightItalic.woff) format("woff"),
+        url(../fonts/HelveticaNeueLightItalic.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Helvetica Neue";
+    src: url(../fonts/HelveticaNeueLight.woff) format("woff"),
+        url(../fonts/HelveticaNeueLight.ttf) format("truetype");
+    font-weight: 300;
+}
+
+
+/*=============================
+ == CSS RESET
+  ============================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+/* ol,
+ ul {
+    list-style: none;
+ } */
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*=============================
+ == BASIC STYLES
+  ============================*/
+.wrapper {
+    width: 1115px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+/*=============================
+== HEADER
+ ============================*/
+
+.page-header {
+    width: 1366px;
+    height: 68px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.page-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    list-style-type: none;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 105px;
+}
+
+/*=============================
+== banner
+ ============================*/
+
+.banner {
+    width: 1366px;
+    height: 434px;
+    background: url(../images/bacground.png);
+    background-repeat: no-repeat;
+    padding-top: 177px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.banner h1 {
+    font-family: "Helvetica Neue";
+    font-weight: 900;
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.banner p {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.btn {
+    width: 166px;
+    height: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ca0500;
+    background: #ca0500;
+    margin: 0 auto;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.about-investors {
+    width: 1366px;
+    min-height: 704px;
+    /* background: url(../images/bacground-2.png); */
+    background-position: right center;
+    background: linear-gradient(97deg, #fff 0%, #fff 50%, #111111 50%, #111111 100%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 62px;
+}
+
+.about-investors-2 {
+    width: 421px;
+    height: 100%;
+}
+
+.about-investors-2 h3::after {
+    content: "";
+    /* Свойство content необходимо указывать хотя бы пустое, иначе псевдоэлементы не отобразятся */
+    display: block;
+    /* Блочная модель */
+    width: 38px;
+    /* Задаём ширину линии */
+    height: 2px;
+    /* Высота линии */
+    background-color: #ca0500;
+    /* Цвет линии */
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.about-investors-2 h3 {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 1.1;
+}
+
+.about {
+    color: #000;
+}
+
+.investors {
+    color: #fff;
+}
+
+.about-investors-2 h4 {
+    font-family: "Helvetica Neue Italic";
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.about-investors-2 p {
+    font-family: "Helvetica Neue";
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 25px;
+    line-height: 1.6;
+}
+
+/*=============================
+== FOOTER
+=============================*/
+
+.page-footer {
+    width: 1366px;
+    height: 176px;
+    background: #111111;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 28px;
+}
+
+.page-footer-block {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.page-footer-block h5 {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* .page-footer-block hr {
+    width: 200px;
+    height: 1px;
+    border: none;
+    color: #292929;
+    background-color: #292929;
+    margin-bottom: 15px;
+    margin-top: 0px;
+} */
+
+
+.page-footer-block h5::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #292929;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.page-footer-block ul li {
+    margin-bottom: 12px;
+}
+
+.page-footer-block ul li a {
+    list-style-type: none;
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 13px;
+    color: #7e7e7e;
+}
+
+.social {
+    height: 90px;
+    margin-bottom: 35px;
+}
+
+.soc {
+    width: 100%;
+    height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-bottom: 38px;
+}
+
+.socials {
+    display: block;
+    width: 43px;
+    height: 43px;
+    border: 1px solid #000;
+    border-radius: 50%;
+    background: url(../images/socials.png),
+        linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+    margin-right: 13px;
+    box-sizing: border-box;
+}
+
+a.fb {
+    background-position: 3px 1px;
+    background-size: 285%;
+}
+
+a.tw {
+    background-position: 41px 2px;
+    background-size: 285%;
+}
+
+a.google {
+    background-position: -34px 2px;
+    background-size: 285%;
+}
+
+.copiright {
+    font-family: "Helvetica Neue";
+    font-weight: 400;
+    font-size: 13px;
+    color: #7e7e7e;
+    display: inline;
+}

@@ -1,0 +1,654 @@
+/*=============================
+== FONTS CONNECTION
+ ============================*/
+@font-face {
+   font-family: SourceSansPro;
+   src: url(../fonts/SourceSansPro/sourcesanspro.woff) format("woff"),
+      url(../fonts/SourceSansPro/sourcesanspro.ttf) format("truetype");
+   font-weight: 400;
+}
+
+@font-face {
+   font-family: SourceSansPro;
+   src: url(../fonts/SourceSansPro/sourcesansprobold.woff) format("woff"),
+      url(../fonts/SourceSansPro/sourcesansprobold.ttf) format("truetype");
+   font-weight: 700;
+}
+
+@font-face {
+   font-family: Lato;
+   src: url(../fonts/Lato/latoblack.woff) format("woff"),
+      url(../fonts/Lato/latoblack.ttf) format("truetype");
+   font-weight: 900;
+}
+
+@font-face {
+   font-family: Lato;
+   src: url(../fonts/Lato/latobold.woff) format("woff"),
+      url(../fonts/Lato/latobold.ttf) format("truetype");
+   font-weight: 700;
+}
+
+
+
+/*=============================
+== CSS RESET
+ ============================*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+
+body {
+   line-height: 1;
+}
+
+/* ol,
+ul {
+   list-style: none;
+} */
+
+blockquote,
+q {
+   quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: '';
+   content: none;
+}
+
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+
+/*=============================
+== BASIC STYLES
+ ============================*/
+h3 {
+   font-family: Lato;
+   font-size: 44px;
+   font-weight: 900;
+   color: #506a85;
+   margin-top: 133px;
+}
+
+a {
+   text-decoration: none;
+}
+
+li {
+   list-style-type: none;
+}
+
+.btn {
+   height: 65px;
+   box-sizing: border-box;
+   border: 1px solid #00bc9c;
+   background: #00bc9c;
+   border-radius: 3px;
+   margin: 0 auto;
+   text-align: center;
+   font-family: SourceSansPro;
+   font-weight: 700;
+   font-size: 18px;
+   color: #ffffff;
+   text-transform: uppercase;
+   text-decoration: none;
+   /* padding-top: 12px; */
+}
+
+
+
+
+/*=============================
+== HEADER
+ ============================*/
+.page-header {}
+
+.header-contact {
+   background: #f5f7fa;
+}
+
+.header-menu {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.logo {
+   height: 112px;
+   background: none;
+   border-top: 1px solid #e6e9ed;
+   border-bottom: 1px solid #e6e9ed;
+
+}
+
+.header-cont {
+   height: 40px;
+   display: flex;
+
+
+}
+
+
+
+.header-cont img {
+   margin-right: 8px;
+}
+
+.header-cont p {
+   margin-right: 25px;
+}
+
+.header-cont a {
+   color: #506a85;
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 12px;
+}
+
+.socials ul {
+   display: flex;
+   justify-content: space-between;
+}
+
+.header-nav ul {
+   display: flex;
+   justify-content: space-around;
+}
+
+.header-nav a {
+   list-style-type: none;
+   font-family: SourceSansPro;
+   font-weight: 700;
+   font-size: 15px;
+   text-transform: uppercase;
+   color: #506a85;
+}
+
+/*=============================
+== Made for Designers
+ ============================*/
+
+.mfd {
+   height: 880px;
+   background: url(../images/image-background.png);
+   background-size: cover;
+}
+
+h1 {
+   font-family: Lato;
+   font-weight: 700;
+   font-size: 78px;
+   color: #ffffff;
+   text-align: center;
+   text-transform: uppercase;
+   margin-top: 300px;
+}
+
+.sentence {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 24px;
+   color: #a3b1bf;
+   text-align: center;
+   line-height: 1.2;
+   margin-top: 35px;
+}
+
+.get-started-now {
+   width: 295px;
+   margin-top: 65px;
+
+}
+
+.for-button {
+   text-align: center;
+}
+
+
+
+
+
+/*=============================
+== Card BLOCK
+ ============================*/
+.row-1 {
+   justify-content: center;
+
+}
+
+.row-1 h3 {
+   margin-bottom: 44px;
+}
+
+.row-1 p {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 22px;
+   color: #73879c;
+   text-align: center;
+   line-height: 1.5;
+   margin-bottom: 83px;
+}
+
+.card-deck {
+   margin-bottom: 130px;
+}
+
+.card-title {
+   font-family: Lato;
+   font-weight: 900;
+   font-size: 26px;
+   color: #506a85;
+   vertical-align: top;
+   margin-bottom: 30px;
+}
+
+/* .col-md-1 {
+   flex-direction: row;
+   justify-content: flex-end;
+} */
+
+.cards {
+   padding: 0;
+   max-width: 23%;
+   margin-right: 15px;
+}
+
+.card-text {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 16px;
+   color: #7e90a3;
+   text-align: left;
+   line-height: 1.6;
+   margin-bottom: 83px;
+}
+
+
+/*=============================
+== latest-works
+ ============================*/
+.latest-works {
+   background: #f2f5f7;
+   height: 1265px;
+}
+
+.card-2 {
+   width: 100%;
+
+}
+
+.np {
+   align-items: center;
+}
+
+.card-2 {
+   width: 570px;
+   height: 390;
+   justify-content: center;
+}
+
+.card-body-2 {
+   height: 112px;
+   background: #ffffff;
+   border: 1px solid #e6e9ed;
+   border-top: none;
+   box-sizing: border-box;
+   padding-top: 35px;
+}
+
+.card-body-2 h5 {
+   text-align: center;
+   margin-bottom: 12px;
+}
+
+.card-body-2 p {
+   text-align: center;
+}
+
+.card-body-2 a {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #73879c;
+}
+
+.carusel-block {
+   display: flex;
+   justify-content: space-between;
+   margin-top: 80px;
+   margin-bottom: 45px;
+}
+
+.car-image {
+   /* width: 270px; */
+   height: 185px;
+}
+
+.carusel-block img {
+   width: 100%;
+}
+
+.carusel-controls {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.carusel-controls ul {
+   width: 65px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.carusel-controls li {
+   display: inline-block;
+   list-style: none;
+}
+
+.button {
+   width: 15px;
+   height: 15px;
+   border: 1px solid #506a85;
+   border-radius: 8px;
+   background: #506a85;
+}
+
+.active-2 {
+   border: 1px solid #00bc9c;
+   background: #00bc9c;
+}
+
+.button:hover {
+   border-color: #00bc9c;
+}
+
+/*=============================
+== Want to work with us?
+ ============================*/
+.want-to-work {
+   height: 484px;
+}
+
+.work-us {
+   text-align: center;
+   margin-bottom: 44px;
+}
+
+.row-3 p {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 22px;
+   color: #73879c;
+   text-align: center;
+   line-height: 1.5;
+   margin-bottom: 46px;
+}
+
+
+
+/*=============================
+== REPEAT-ALL
+ ============================*/
+
+.repeat-all {
+   background: #2f4052;
+}
+
+h6 {
+   font-family: Lato;
+   font-size: 16px;
+   font-weight: 900;
+   color: #fff;
+   text-transform: uppercase;
+   margin-top: 75px;
+   margin-bottom: 26px;
+}
+
+.logo-2 {
+   margin-top: 26px;
+   margin-bottom: 26px;
+}
+
+.repeat-all p {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #a3b1bf;
+   text-align: left;
+   line-height: 1.6;
+   margin-bottom: 23px;
+}
+
+.more-about ul {
+   display: flex;
+   flex-direction: row;
+}
+
+.more-about li a {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 15px;
+   color: #a3b1bf;
+   margin-right: 8px;
+}
+
+.collection-of-pictures {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   padding-right: 0;
+   padding-left: 0;
+   margin-bottom: 10px;
+}
+
+.location ul {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 9px;
+}
+
+.location ul li img {
+   margin-right: 11px;
+}
+
+.location ul li a {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #8c9aa8;
+}
+
+.subscribe {
+   display: flex;
+   flex-direction: row;
+}
+
+.subscribe input {
+   width: 170px;
+   height: 40px;
+   border: 1pc solid #4e5c6c;
+   border-top-left-radius: 3px;
+   border-bottom-left-radius: 3px;
+   background: #4e5c6c;
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #8c9aa8;
+}
+
+.button-border {
+   width: 100px;
+   height: 40px;
+   box-sizing: border-box;
+   border: 1px solid #4e5c6c;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   background: #4e5c6c;
+}
+
+.subscribe-btn {
+   width: 88px;
+   height: 28px;
+   margin: 5px;
+   box-sizing: border-box;
+   border: solid #00bc9c;
+   border-radius: 3px;
+   background: #00bc9c;
+   text-transform: uppercase;
+   font-family: SourceSansPro;
+   font-weight: 900;
+   font-size: 13px;
+   color: #fff;
+   justify-content:
+}
+
+
+/*=============================
+== FOOTER
+=============================*/
+
+.page-footer-2 {
+   height: 83px;
+   background: #283645;
+}
+
+.row-4 {
+   height: 100%;
+}
+
+.row-4 p {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #616f7d;
+   /* margin-top: 32px; */
+}
+
+.footer-nav ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /* margin-top: 32px; */
+}
+
+.footer-nav li {
+   font-family: SourceSansPro;
+   font-weight: 400;
+   font-size: 14px;
+   color: #616f7d;
+}
+
+.footer-nav li:not(:last-child):after {
+   content: '\00B7';
+   padding-right: 5px;
+   padding-left: 5px;
+}
