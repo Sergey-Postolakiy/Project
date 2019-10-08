@@ -200,16 +200,16 @@ console.log(sum2([1], {}, '1', 1)); //3 */
 //развернуть массив и строки в нём
 let arr9 = ['abcd', 'ghjk'];
 let revArr = [];
-let revString = '';
 
-function rev(arrr) {
-   for (let i = arrr.length - 1; i >= 0; i--) {
-      let strin = arrr[i];
-      for (let j = strin.length - 1; j >= 0; j--) {
-         revString += strin[j];
+function rev(arr) {
+   for (let i = arr.length - 1; i >= 0; i--) {
+      let revString = '';
+      let string = arr[i];
+      for (let j = string.length - 1; j >= 0; j--) {
+         revString += string[j];
          console.log(revString);
       }
-      revArr = arrr.push[revString];
+      revArr.push(revString);
       console.log(revArr);
    }
    return revArr;
