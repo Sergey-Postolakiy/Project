@@ -1,5 +1,5 @@
 //что выведет
-console.log(typeof null); //object єто ошибка язка JS
+console.log(typeof null); //object это ошибка язка JS
 
 //что выведет консоль? если один из операндов string то происходит конкатенация
 console.log('1' + 2); //12
@@ -198,26 +198,27 @@ console.log(sum2([1], {}, '1', 1)); //3 */
 // console.log(sum3([1], {}, '1', 1));
 
 //развернуть массив и строки в нём
-let arr9 = ['abcd', 'ghjk'];
+let arr9 = ['1234', '6789'];
 let revArr = [];
 
 function rev(arr) {
    for (let i = arr.length - 1; i >= 0; i--) {
-      let revString = '';
+      let revString = ''; //инициализировать переменную (перевернутую строку) нужно внутри for, т.к. если она будет инициализирована снаружи то не будет очищаться после каждого прохода
       let string = arr[i];
       for (let j = string.length - 1; j >= 0; j--) {
          revString += string[j];
-         console.log(revString);
+         // console.log(revString);
       }
       revArr.push(revString);
-      console.log(revArr);
+      // console.log(revArr);
    }
    return revArr;
 }
-console.log(rev(arr9));
+console.log(rev(arr9)); //[0: "9876" 1: "4321"]
 
+//развернуть строку
+let str = 'abcd';
 
-let str = 'abcd'; //просто строка
 function revers(string) {
    let rev = '';
    for (let i = string.length - 1; i >= 0; i--) {
@@ -227,3 +228,90 @@ function revers(string) {
 }
 console.log(revers(str)); //dcba передавать надо массив с элементом!
 console.log(revers('asdf')); //fdsa
+
+//удалить все пробелы из строки
+function noSpace(x) {
+   return x.split(' ').join('')
+}
+console.log(noSpace('Hello world!')) //Helloworld!
+
+//что вернет консоль?
+console.log("i'm a lasagna hog".split("").reverse().join("")); //goh angasal a m'i
+
+function getStr() {
+   return [].slice.call(arguments, 1).join(arguments[0])
+}
+
+console.log(getStr('*', '1', 'b', '1c'))
+
+let hg = 'zxcvbnm'
+
+function y(x) {
+   let rrev = '';
+   for (let i = x.length - 1; i >= 0; i--) {
+      rrev += x[i];
+   }
+   return rrev;
+}
+console.log(y(hg)); //mnbvcxz
+
+//найти сумму чисел между a, b включительно, если они равны - вывести одно из них
+function GetSum(a, b) {
+   let total = 0;
+   if (a === b) {
+      return a
+   } else if (a < b) { //если a < b
+      for (let i = a; i <= b; i++) { //приравниваем i к a и пока оно не будет равно b
+         total += i; //к первоначальному a прибавляем за каждый проход a+1
+      }
+      return total;
+   } else if (a > b) {
+      for (let i = b; i <= a; i++) {
+         total += i;
+      }
+      return total;
+   }
+}
+console.log(GetSum(17, -8));
+
+//нужно проверить предоставленный массив (x) для хороших идей «good» и плохих идей «bad». Если есть одна или две хорошие идеи, верните «Publish!», Если их больше двух, верните «I smell a series!». Если хороших идей нет, как это часто бывает, верните «Fail!».
+let x = ['good', 'bad', 'bad', 'good', 'bad', 'good'];
+
+function well(x) {
+   let newX = x.filter(function (value) {
+      return value == 'good'
+   });
+   if (newX.length < 1) {
+      return 'Fail!';
+   } else if (newX.length < 3) {
+      return 'Publish!';
+   } else {
+      return 'I smell a series!';
+   }
+}
+
+/*function well(x) {
+   const good_count = x.filter(x => x == 'good').length;
+   return good_count < 1 ? 'Fail!' :
+      good_count < 3 ? 'Publish!' : 'I smell a series!';
+}
+
+console.log(well(x));*/
+
+// function well(x) {
+//    let goodCount = 0;
+//    for (let i = 0; i < x.length; i++) {
+//       if (x[i] === 'good') {
+//          goodCount++;
+//       }
+//    }
+//    if (goodCount === 0) {
+//       return 'Fail!';
+//    } else if (goodCount <= 2) {
+//       return 'Publish!';
+//    } else if (goodCount >= 3) {
+//       return 'I smell a series!';
+//    }
+// }
+
+console.log(well(x));
