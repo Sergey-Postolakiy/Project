@@ -19,9 +19,9 @@ function findCommonGroups(arr, y, x, del, breaksOff) {
    }
    if (numb === breaksOff) {
       arr[y][x] = del;
-      let xs = [x - 1, x + 1, x, x],
-         ys = [y, y, y + 1, y - 1];
-      xs.forEach((v, x) => findCommonGroups(arr, v, ys[x], del, breaksOff));
+      let ys = [y + 1, y - 1, y, y],
+         xs = [x, x, x - 1, x + 1];
+      ys.forEach((v, y) => findCommonGroups(arr, v, xs[y], del, breaksOff));
    }
 };
 
