@@ -8,7 +8,6 @@ let array = [
    [3, 3, 3, 0, 0, 1]
 ];
 
-
 function findCommonGroups(arr, y, x, del, breaksOff) {
    if (arr[y] === undefined || arr[y][x] === undefined) {
       return
@@ -16,7 +15,7 @@ function findCommonGroups(arr, y, x, del, breaksOff) {
    let numb = arr[y][x];
    if (breaksOff === undefined) {
       breaksOff = numb;
-   }
+   };
    if (numb === breaksOff) {
       arr[y][x] = del;
       let ys = [y + 1, y - 1, y, y],
