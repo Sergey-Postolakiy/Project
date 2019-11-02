@@ -3,7 +3,7 @@
 Сама структура объекта неизвестна (типы полей, их уровень вложения).
 Поля в объекте могут быть другими сложными объектами, типом Date, string, number, boolean.*/
 //исходный массив
-let arr = [{
+let inputArrayData = [{
    fullName: {
       surname: 'xxx',
       firstName: 'yyy',
@@ -22,13 +22,13 @@ let arr = [{
       other:
    }
 }];
-console.log(arr[0].fullName.isHuman);
+console.log(inputArrayData[0].fullName.isHuman);
 /*
 2. Так же есть объект такой же структуры, но с типами полей boolean.
 Используется для задания правил преобразований (если значение поля true
    - то поле должно быть в результирующем массиве).*/
 //массив правил преобразования, если все поля true - элемент попадает в результирующий массив
-let bool = {
+let configArrayData = {
    fullName: {
       surname: true,
       firstName: true,
@@ -42,18 +42,18 @@ let bool = {
 Названия полей, в которых хранятся локализованные заголовки, соответствуют пути к полю в объекте,
 в котором хранится его значение.*/
 //массив где хранятся локализации
-let loc = {
-   "arr[0].fullName.surname": "Прізвище",
-   "arr[0].fullName.firstName": "Ім'я",
-   "arr[0].fullName.middleName": "По-батькові",
-   "arr[0].fullName.isHuman": "Чи людина?",
-   "arr[0].fullName.date": "Дата"
+let localizationConfig = {
+   "inputArrayData[0].fullName.surname": "Прізвище",
+   "inputArrayData[0].fullName.firstName": "Ім'я",
+   "inputArrayData[0].fullName.middleName": "По-батькові",
+   "inputArrayData[0].fullName.isHuman": "Чи людина?",
+   "inputArrayData[0].fullName.date": "Дата"
 }
 
 /*4. Необходимо написать код, который на основе вышеописанных объектов создаст массив объектов
 следующей структуры:*/
 //результат
-let output = [{
+let outputArray = [{
    name: "Прізвище",
    value1: "xxx",
    value2: "XXX"
