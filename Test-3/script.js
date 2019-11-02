@@ -43,11 +43,11 @@ let configArrayData = {
 в котором хранится его значение.*/
 //массив где хранятся локализации
 let localizationConfig = {
-   "inputArrayData[0].fullName.surname": "Прізвище",
-   "inputArrayData[0].fullName.firstName": "Ім'я",
-   "inputArrayData[0].fullName.middleName": "По-батькові",
-   "inputArrayData[0].fullName.isHuman": "Чи людина?",
-   "inputArrayData[0].fullName.date": "Дата"
+   "fullName.surname": "Прізвище",
+   "fullName.firstName": "Ім'я",
+   "fullName.middleName": "По-батькові",
+   "fullName.isHuman": "Чи людина?",
+   "fullName.date": "Дата"
 }
 
 /*4. Необходимо написать код, который на основе вышеописанных объектов создаст массив объектов
