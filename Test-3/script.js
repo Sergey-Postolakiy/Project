@@ -9,8 +9,8 @@ let inputArrayData = [{
       firstName: 'yyy',
       middleName: 'zzz',
       isHuman: true,
-      Date: Mar 12 2012,
-      other: 1
+      Date: "03 12 2012",
+      other: "1"
    }
 }, {
    fullName: {
@@ -18,8 +18,8 @@ let inputArrayData = [{
       firstName: 'YYY',
       middleName: 'ZZZ',
       isHuman: false,
-      Date: Mar 8 2012,
-      other:
+      Date: "03 8 2012",
+      other: ""
    }
 }];
 console.log(inputArrayData[0].fullName.isHuman);
@@ -32,9 +32,10 @@ let configArrayData = {
    fullName: {
       surname: true,
       firstName: true,
-      middleName: false,
-      isHuman: true,
+      middleName: true,
+      isHuman: false,
       Date: true,
+      other: true
    }
 }
 
@@ -47,7 +48,8 @@ let localizationConfig = {
    "fullName.firstName": "Ім'я",
    "fullName.middleName": "По-батькові",
    "fullName.isHuman": "Чи людина?",
-   "fullName.date": "Дата"
+   "fullName.Date": "Дата",
+   "fullName.other": "Інше"
 }
 
 /*4. Необходимо написать код, который на основе вышеописанных объектов создаст массив объектов
@@ -73,11 +75,15 @@ let outputArray = [{
    name: "Дата",
    value1: "12.03.2012",
    value2: "08.03.2012"
+}, {
+   name: "Інше",
+   value1: "1",
+   value2: "other"
 }]
 
 /*5. Если поле типа boolean - то выводить его значение в виде Да / Нет, дату выводить в формате dd.MM.yyyy
 
-6. Если для поля отсутствовует локализация, то вместо локализации необходимо вывести название этого поля.
+6. Если для поля отсутствует локализация, то вместо локализации необходимо вывести название этого поля.
 */
 
 /*
