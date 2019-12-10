@@ -12,11 +12,17 @@ Return the total figure the individual will receive as a string prefixed with "�
 
 function bonusTime(salary, bonus) {
    if (bonus === true) {
-      return '£' + salary * 10
+      return '£' + salary * 10;
    } else {
-      return '£' + salary
+      return '£' + salary;
    }
 }
+
+/*
+function bonusTime(salary, bonus) {
+   return '£' + salary * (bonus ? 10 : 1);
+}
+*/
 
 console.log(bonusTime(10000, true)); //£100000
 console.log(bonusTime(600, false)); //£6000
